@@ -64,7 +64,7 @@ for index, row in df.iterrows():
                 POSITIVE_WORD = []
                 with open('MasterDictionary/positive-words.txt', 'r') as file:
                     for line in file:
-                        clear_line = line.replace('\n','')         #for no blank line
+                        clear_line = line.replace('\n','')         #for no blank lines
                         var = clear_line
                         if var in final_words:
                             POSITIVE_WORD.append(var)
@@ -139,6 +139,4 @@ for index, row in df.iterrows():
 print("----for loop end ----")
 
 result_df.to_csv('output_data_structure.csv')
-#print(result_df)
 
-#df.to_csv('final_output_data.csv')
